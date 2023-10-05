@@ -18,6 +18,26 @@
             src="https://placehold.co/600x400" 
             alt="placeholder image">
         </section>
+
+        <section>
+            <h2>Same image different resolutions</h2>
+            <img srcset="https://placehold.co/300x300, 
+            https://placehold.co/600x600 2x, https://placehold.co/900x900 3x" 
+            src="https://placehold.co/300x300" 
+            alt="placeholder image"
+            class="avatar">
+        </section>
+
+
+        <section>
+            <h2>Art Direction</h2>
+            <picture>
+                <source srcset="images/fall-dog-1200.jpg" media="(min-width: 900px)">
+                <source srcset="images/fall-dog-900.jpg" media="(min-width: 640px)">
+                <source srcset="images/fall-dog-640.jpg" media="(min-width: 300px)">
+                <img src="images/fall-dog-640.jpg" alt="a dog sitting in it's bed">
+            </picture>
+        </section>
     </div>
 </body>
 
